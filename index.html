@@ -1,30 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
 
 </head>
-<body>
 
-  We're coming soon
+<body class="page">
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+  <main class="page__content">
+    <article class="coming-soon">
+      <header class="article__header">
+        <div class="container">
+          <a href="#" class="link link__header"><img src="/img/logo.svg" alt="Base Apparel logo"
+              class="img logo__img"></a>
+        </div>
+      </header>
+      <img src="/img/hero-mobile.jpg" alt="hero image" srcset="/img/hero-mobile.jpg 375w, 
+              /img/hero-desktop.jpg 610w" 
+      sizes="(max-width: 375px) 375px, 610px"  class="img article__img">
+      <img srcset="img/elva-fairy-1440w.jpg 1440w,
+      img/elva-fairy-375w.jpg 375w"
+     sizes="(max-width: 600px) 375px,
+            1440px"
+     src="img/elva-fairy-1440w.jpg"
+     alt="Elva dressed as a fairy">
+      <article class="article__content">
+        <div class="container container--article">
+          <h1 class="content__title">
+            We're <strong>
+              coming soon
+            </strong>
+          </h1>
 
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">AX-d</a>.
-    </p>
-  </footer>
-<script src="/js/main.js"></script>
+          <p class="content__copy">
+            Hello fellow shoppers! We're currently building our new fashion store.
+            Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+          <form action="#" class="content__form" novalidate>
+
+            <input type="email" class="form__input" placeholder="Email Address">
+            <button type="submit" class="form__submit" aria="submit"><img src="/img/icon-arrow.svg"
+                alt="submit icon"></button>
+          </form>
+      </article>
+      </div>
+      <footer class="article__footer">
+        <div class="container">
+          <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">AX-d</a>.
+          </p>
+        </div>
+      </footer>
+    </article>
+
+  </main>
+
+
+  <script src="/js/main.js"></script>
 </body>
+
 </html>
